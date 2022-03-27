@@ -29,28 +29,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textintro"
         app:srcCompat="@drawable/donut_circle" />
 
-    <ImageView
-        android:id="@+id/froyo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:onClick="showOder"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/donut"
-        app:srcCompat="@drawable/froyo_circle" />
-
-    <ImageView
-        android:id="@+id/icecream"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:onClick="showOder"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/froyo"
-        app:srcCompat="@drawable/icecream_circle" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -62,6 +40,17 @@
         app:layout_constraintStart_toEndOf="@+id/donut"
         app:layout_constraintTop_toTopOf="@+id/donut" />
 
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="120dp"
+        android:onClick="showOder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donut"
+        app:srcCompat="@drawable/froyo_circle" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
@@ -70,8 +59,10 @@
         android:text="@string/froyo"
         app:layout_constraintBottom_toBottomOf="@+id/froyo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/froyo"
-        app:layout_constraintTop_toTopOf="@+id/froyo" />
+        app:layout_constraintTop_toTopOf="@+id/froyo"
+        app:layout_constraintVertical_bias="0.532" />
 
     <TextView
         android:id="@+id/textView3"
@@ -81,7 +72,20 @@
         android:text="@string/ice_cream_sandwiches"
         app:layout_constraintBottom_toBottomOf="@+id/icecream"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/icecream"
-        app:layout_constraintTop_toTopOf="@+id/icecream" />
+        app:layout_constraintTop_toTopOf="@+id/icecream"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <ImageView
+        android:id="@+id/icecream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="156dp"
+        android:onClick="showOder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/froyo"
+        app:srcCompat="@drawable/icecream_circle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
